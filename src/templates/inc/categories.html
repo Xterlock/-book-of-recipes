@@ -1,0 +1,6 @@
+<nav id="categories" class="nav nav-underline justify-content-between">
+    {% for category in categories %}
+    <a id="category_{{ category.id }}" class="nav-item nav-link link-body-emphasis" href="#{{ category.id  }}"
+       onclick="selectCategory(this, '{{ category.id }}')">{{ category.title }}</a>
+    {% endfor %}
+</nav>
